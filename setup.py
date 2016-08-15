@@ -1,13 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import subarg
 from setuptools import setup, find_packages
 
 setup(name='subarg',
-      version=subarg.__version__,
-      description=subarg.__desc__,
-      author=subarg.__author__,
-      author_email=subarg.__author_email__,
-      url=subarg.__url__,
+      version='0.0.1.dev0',
+      description="""Parse sub-arguments in `[` and `]` recursively""",
+      author='keik',
+      author_email='k4t0.kei@gmail.com',
+      url='https://github.com/keik/subarg',
+      license='MIT',
+      classifiers=[
+          'License :: OSI Approved :: MIT License',
+          'Programming Language :: Python',
+          'Programming Language :: Python :: 2',
+          'Programming Language :: Python :: 2.7',
+          'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 3.4',
+          'Programming Language :: Python :: 3.5',
+      ],
       packages=find_packages())

@@ -6,7 +6,7 @@ DEV_DEPS="requirements-dev.txt"
 test: init
 	@echo $(TAG)$@$(END)
 	flake8
-	py.test --verbose tests
+	py.test tests --cov subarg --verbose
 
 init: uninstall
 	@echo $(TAG)$@$(END)
