@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 
 setup(name='subarg',
-      version='0.0.1.dev0',
+      version='1.0.0',
       description="""Parse sub-arguments in `[` and `]` recursively""",
       author='keik',
       author_email='k4t0.kei@gmail.com',
@@ -16,7 +16,6 @@ setup(name='subarg',
           'Programming Language :: Python :: 2',
           'Programming Language :: Python :: 2.7',
           'Programming Language :: Python :: 3',
-          'Programming Language :: Python :: 3.4',
           'Programming Language :: Python :: 3.5',
       ],
       packages=find_packages())
