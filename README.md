@@ -11,7 +11,17 @@ Parse sub-arguments in `[` and `]` recursively.
 
 ## Usage
 
-With *example.py* like
+Basically
+
+```
+>>> import subarg
+>>> argv = ['--foo', 'bar', '--buz', '[', 'qux', '--quux', 'corge', ']']
+>>> subarg.parse(argv)
+['--foo', 'bar', '--buz', ['qux', '--quux', 'corge']]
+```
+
+It's useful to pass `sys.argv` directly.
+For example, with *example.py* like
 
 ```python
 import sys
@@ -22,7 +32,7 @@ args = subarg.parse(sys.argv)
 print(args)
 ```
 
-And execute belows, then arguments would be parsed like
+and execute belows, then arguments would be parsed like
 
 ```
 % python example.py --foo bar --buz [ qux --quux corge ]
